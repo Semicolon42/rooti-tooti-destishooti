@@ -5,7 +5,10 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_player_shadow",
+    "path": "sprites/spr_player_shadow/spr_player_shadow.yy",
+  },
   "persistent": false,
   "parentObjectId": {
     "name": "obj_enemy",

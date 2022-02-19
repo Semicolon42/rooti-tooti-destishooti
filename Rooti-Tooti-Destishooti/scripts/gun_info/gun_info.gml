@@ -22,6 +22,25 @@ function init_gun_info(){
 			bullet_damage: 1,
 			bullet_damage_type: DAMAGE_TYPE.NORMAL,
 			sound_reload: snd_pistol_reload,
+		},
+		{
+			sprite: spr_player_gun_pump_shotgun,
+			clip_size: 2,
+			reload_time: 100,
+			shoot_cooldown: 50,
+			fire: function(_x, _y, _facing) {
+				repeat(6) {
+					var _bullet = instance_create_layer(_x + 3 * _facing, _y - 6, "player_bullet", obj_pistol_bullet)
+					_bullet.direction = 90 - 90 * _facing + random(20)-10
+					_bullet.speed = 6 + random_range(-2,2)
+					_bullet.bullet_life = 20
+					audio_play_sound(snd_pistol_shoot, 0, false)
+				}
+			},
+			bullet_hit_anim: spr_bullet_hit,
+			bullet_damage: 1,
+			bullet_damage_type: DAMAGE_TYPE.NORMAL,
+			sound_reload: snd_pistol_reload,
 		}
 	]
 }

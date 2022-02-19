@@ -52,6 +52,7 @@
     {"id":{"name":"ds_grid_empty","path":"scripts/ds_grid_empty/ds_grid_empty.yy",},"order":1,},
     {"id":{"name":"ds_list_replace_","path":"scripts/ds_list_replace_/ds_list_replace_.yy",},"order":2,},
     {"id":{"name":"game_get_","path":"scripts/game_get_/game_get_.yy",},"order":0,},
+    {"id":{"name":"spr_player_gun_pump_shotgun","path":"sprites/spr_player_gun_pump_shotgun/spr_player_gun_pump_shotgun.yy",},"order":0,},
     {"id":{"name":"window_get_cursor_sprite","path":"scripts/window_get_cursor_sprite/window_get_cursor_sprite.yy",},"order":0,},
     {"id":{"name":"snd_enemy_hit","path":"sounds/snd_enemy_hit/snd_enemy_hit.yy",},"order":2,},
     {"id":{"name":"string_implode","path":"scripts/string_implode/string_implode.yy",},"order":1,},
@@ -66,6 +67,7 @@
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":0,},
     {"id":{"name":"spr_player_running_hand_empty","path":"sprites/spr_player_running_hand_empty/spr_player_running_hand_empty.yy",},"order":2,},
     {"id":{"name":"string_explode","path":"scripts/string_explode/string_explode.yy",},"order":0,},
+    {"id":{"name":"obj_game_menu_controller","path":"objects/obj_game_menu_controller/obj_game_menu_controller.yy",},"order":11,},
     {"id":{"name":"ds_grid_insert_","path":"scripts/ds_grid_insert_/ds_grid_insert_.yy",},"order":2,},
     {"id":{"name":"spr_pistol_bullet","path":"sprites/spr_pistol_bullet/spr_pistol_bullet.yy",},"order":2,},
     {"id":{"name":"music_sean_theme_1","path":"sounds/music_sean_theme_1/music_sean_theme_1.yy",},"order":0,},
@@ -150,6 +152,7 @@
   ],
   "isDnDProject": false,
   "isEcma": false,
+  "tutorialPath": "",
   "configs": {
     "name": "Default",
     "children": [],
@@ -240,6 +243,7 @@
     {"folderPath":"folders/GAME/Player/Sprite/Rolling.yy","order":5,"resourceVersion":"1.0","name":"Rolling","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/GAME/Enemies/Spawner.yy","order":7,"resourceVersion":"1.0","name":"Spawner","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/GAME/Enemies/Spawner/Sprites.yy","order":2,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/GAME/Player Guns/Pump Shotgun.yy","order":3,"resourceVersion":"1.0","name":"Pump Shotgun","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
@@ -252,7 +256,7 @@
     {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"gmlp-reference-guide.pdf","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
-    "IDEVersion": "2022.1.1.610",
+    "IDEVersion": "2.3.7.603",
   },
   "resourceVersion": "1.4",
   "name": "Rooti-Tooti-Destishooti",

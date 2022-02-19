@@ -13,6 +13,7 @@ switch(animation_state) {
 		sprite_index = spr_goblin_idle
 }
 
+draw_sprite_ext(spr_player_shadow, 0, x, y, image_xscale * facing, image_yscale, 0, c_white, 0.6)
 event_inherited()
 
 // debug draw

@@ -2,7 +2,8 @@ ctrl_up    = keyboard_check(vk_up)
 ctrl_left  = keyboard_check(vk_left)
 ctrl_right = keyboard_check(vk_right)
 ctrl_down  = keyboard_check(vk_down)
-ctrl_run   = keyboard_check(ord("C"))
+ctrl_reload_switch_interact = keyboard_check(ord("C"))
+ctrl_reload_switch_interact_released = keyboard_check_released(ord("C"))
 ctrl_roll_pressed = keyboard_check_pressed(ord("X"))
 ctrl_shoot_pressed = keyboard_check_pressed(ord("Z"))
 ctrl_shoot = keyboard_check(ord("Z"))
@@ -16,7 +17,7 @@ if (state == PLAYER_STATE.WALKING) {
 	if (reload_cooldown > 0) {
 		reload_cooldown  -= 1
 		if (reload_cooldown == 0) {
-			ammo = gun.clip_size
+			ammo[gun_equipped] = gun.clip_size
 		}
 	}
 	
@@ -27,10 +28,10 @@ if (state == PLAYER_STATE.WALKING) {
 		x += roll_speed_x
 		y += roll_speed_y
 	} else {
-		if (ctrl_up) y -= ctrl_run ? run_speed_y : walk_speed_y
-		if (ctrl_down) y += ctrl_run ? run_speed_y : walk_speed_y
-		if (ctrl_right) x += ctrl_run ? run_speed_x : walk_speed_x
-		if (ctrl_left) x -= ctrl_run ? run_speed_x : walk_speed_x
+		if (ctrl_up) y -= walk_speed_y
+		if (ctrl_down) y += walk_speed_y
+		if (ctrl_right) x += walk_speed_x
+		if (ctrl_left) x -= walk_speed_x
 		if (ctrl_right && !ctrl_shoot) facing = 1
 		if (ctrl_left && !ctrl_shoot) facing = -1
 		if (roll_time <= 0 && ctrl_roll_pressed) {
@@ -53,21 +54,36 @@ if (state == PLAYER_STATE.WALKING) {
 		if (jump_time > 0) {
 			animation_state = PLAYER_ANNIMATION_STATE.JUMPING
 		} else if (ctrl_up or ctrl_down or ctrl_right or ctrl_left) {
-			if (ctrl_run)
-				animation_state = PLAYER_ANNIMATION_STATE.RUNNING
-			else
-				animation_state = PLAYER_ANNIMATION_STATE.WALKING
+			animation_state = PLAYER_ANNIMATION_STATE.WALKING
 		} else {
 			animation_state = PLAYER_ANNIMATION_STATE.IDLE
 		}
-		
+		if (roll_time == 0 and ctrl_reload_switch_interact) {
+			switch_pressed += 1		
+			if (switch_pressed > switch_press_change_guns and reload_cooldown <= 0 
+						and ammo[gun_equipped] < gun.clip_size) {
+				reload_cooldown = gun.reload_time	
+				audio_play_sound(gun.sound_reload, 0, false)
+			}
+		}
+		if (roll_time == 0 and ctrl_reload_switch_interact_released) {
+			if (switch_pressed < switch_press_change_guns) {
+				gun_equipped = 1 - gun_equipped
+				gun = guns_equipped[gun_equipped]
+				reload_cooldown = 0
+				shoot_cooldown = 10
+			}
+		}
+		if(!ctrl_reload_switch_interact) {
+			switch_pressed = 0
+		}
 		if (roll_time == 0 && ctrl_shoot) {
-			if (shoot_cooldown <= 0 and ammo > 0) {
-				ammo -= 1
+			if (shoot_cooldown <= 0 and ammo[gun_equipped] > 0) {
+				ammo[gun_equipped] -= 1
 				gun.fire(x, y, facing)
 				shoot_cooldown = gun.shoot_cooldown
 			}
-			if (ammo <= 0 and reload_cooldown <= 0) {
+			if (ammo[gun_equipped] <= 0 and reload_cooldown <= 0) {
 				reload_cooldown = gun.reload_time	
 				audio_play_sound(gun.sound_reload, 0, false)
 			}	
