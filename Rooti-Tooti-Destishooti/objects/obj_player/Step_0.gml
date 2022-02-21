@@ -1,12 +1,12 @@
-ctrl_up    = keyboard_check(vk_up)
-ctrl_left  = keyboard_check(vk_left)
-ctrl_right = keyboard_check(vk_right)
-ctrl_down  = keyboard_check(vk_down)
-ctrl_reload_switch_interact = keyboard_check(ord("C"))
-ctrl_reload_switch_interact_released = keyboard_check_released(ord("C"))
-ctrl_roll_pressed = keyboard_check_pressed(ord("X"))
-ctrl_shoot_pressed = keyboard_check_pressed(ord("Z"))
-ctrl_shoot = keyboard_check(ord("Z"))
+var ctrl_up    = keyboard_check(vk_up)
+var ctrl_left  = keyboard_check(vk_left)
+var ctrl_right = keyboard_check(vk_right)
+var ctrl_down  = keyboard_check(vk_down)
+var ctrl_reload_switch_interact = keyboard_check(ord("C"))
+var ctrl_reload_switch_interact_released = keyboard_check_released(ord("C"))
+var ctrl_roll_pressed = keyboard_check_pressed(ord("X"))
+var ctrl_shoot_pressed = keyboard_check_pressed(ord("Z"))
+var ctrl_shoot = keyboard_check(ord("Z"))
 
 
 
@@ -60,10 +60,14 @@ if (state == PLAYER_STATE.WALKING) {
 		}
 		if (roll_time == 0 and ctrl_reload_switch_interact) {
 			switch_pressed += 1		
-			if (switch_pressed > switch_press_change_guns and reload_cooldown <= 0 
-						and ammo[gun_equipped] < gun.clip_size) {
-				reload_cooldown = gun.reload_time	
-				audio_play_sound(gun.sound_reload, 0, false)
+			if (switch_pressed > switch_press_change_guns) {
+				var interactable = instance_position(x,y,obj_interactable)
+				if (interactable != noone and interactable.interact_cooldown <= 0) {
+					interactable.interact_counter += 1	
+				} else if (reload_cooldown <= 0 and ammo[gun_equipped] < gun.clip_size) {
+					reload_cooldown = gun.reload_time	
+					audio_play_sound(gun.sound_reload, 0, false)
+				}
 			}
 		}
 		if (roll_time == 0 and ctrl_reload_switch_interact_released) {

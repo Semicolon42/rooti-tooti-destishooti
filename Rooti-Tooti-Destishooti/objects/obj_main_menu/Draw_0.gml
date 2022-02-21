@@ -9,12 +9,10 @@ if (!show_credits) {
 		draw_text(xx + 20, yy, menu_items[i])	
 	}
 } else {
-	var xx = x
-	var yy = y
 	var h = 10
 	for (i = 0; i < array_length(credits_items); i++) {	
 		var xx = x
-		var yy = y + i * h
+		var yy = y + i * h + credits_scroll
 		draw_text_transformed(xx, yy, credits_items[i], .5, .5, 0)	
 	}
 }

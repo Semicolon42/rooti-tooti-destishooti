@@ -12,7 +12,10 @@ credits_items = [
 	"Player and Goblin Assets: Sunnyside World Asset Pack: DanielDiggle",
 	"                          https://danieldiggle.itch.io/sunnyside",
 	"Music: Sean M",
-	"Sound Effects: _____",
+	"Sound Effects: https://www.gamedevmarket.net/asset/the-complete-audio-and-fx-bundle/",
 	"",
 	"Press <Any Key> to return to the main menu"
 ]
+
+credits_scroll = 0
+credits_scroll_speed = 3
