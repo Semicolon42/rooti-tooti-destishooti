@@ -6,4 +6,9 @@ function scr_interact_gun_pickup(params){
 		gun = guns_equipped[gun_equipped]
 		ammo[gun_equipped] = gun.clip_size
 	}
+	if (array_length(params) >= 2) {
+		if (params[1]) {
+			instance_destroy()
+		}
+	}
 }

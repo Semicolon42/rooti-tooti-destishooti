@@ -249,6 +249,7 @@
     {"folderPath":"folders/GAME/Enemies/Spawner/Sprites.yy","order":2,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/GAME/Player Guns/Pump Shotgun.yy","order":3,"resourceVersion":"1.0","name":"Pump Shotgun","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/GAME/Objects/Interactables.yy","order":5,"resourceVersion":"1.0","name":"Interactables","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/GAME/Player Guns/Semi Auto Pistol.yy","order":4,"resourceVersion":"1.0","name":"Semi Auto Pistol","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
