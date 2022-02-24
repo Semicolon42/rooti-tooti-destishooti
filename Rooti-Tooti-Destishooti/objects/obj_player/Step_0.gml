@@ -98,6 +98,7 @@ if (state == PLAYER_STATE.WALKING) {
 				gun.fire(x, y, facing)
 				shoot_cooldown = gun.shoot_cooldown
 				gun_image_index = 0
+				reload_cooldown = 0
 			}
 			if (ammo[gun_equipped] <= 0 and reload_cooldown <= 0 and shoot_cooldown <= 0) {
 				reload_cooldown = gun.reload_time	
