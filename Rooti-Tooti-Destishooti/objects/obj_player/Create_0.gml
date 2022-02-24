@@ -43,5 +43,7 @@ reload_cooldown = 0
 
 switch_pressed = 0
 switch_press_change_guns = 20
+switch_weapon_cooldown = 10
+
 
 gun_image_index = 0
