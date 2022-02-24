@@ -34,7 +34,7 @@ run_speed_x = 2; run_speed_y = 1.5
 walk_speed_x = 1; walk_speed_y = 0.75
 
 init_gun_info()
-guns_equipped = [get_gun_info(0), get_gun_info(1)]
+guns_equipped = [get_gun_info(2), get_gun_info(3)]
 gun_equipped = 0
 gun = guns_equipped[gun_equipped]
 shoot_cooldown = 0
@@ -43,3 +43,5 @@ reload_cooldown = 0
 
 switch_pressed = 0
 switch_press_change_guns = 20
+
+gun_image_index = 0

@@ -41,9 +41,35 @@ switch(animation_state) {
 		break;
 }
 
+
+
+// Firgure out what to draw for the fun
+var gun_draw_sprite = gun.sprite
+var gun_draw_x = x + 3 * facing
+var gun_draw_y = y - 2
+var gun_draw_angle = 0
+if (shoot_cooldown > 0) {
+	if (gun.sprite_shoot == noone) {
+			
+	} else {
+		if (gun_image_index > sprite_get_number(gun.sprite_shoot)) {
+			gun_draw_sprite = gun.sprite
+		} else {
+			gun_draw_sprite = gun.sprite_shoot
+			gun_image_index += 1
+		}
+	}
+} else if (reload_cooldown > 0) {	
+	if (gun.sprite_reload == noone) {
+		gun_draw_angle = 30 * facing
+	} else {		
+		gun_draw_sprite = gun.sprite_reload
+		gun_image_index = floor(sprite_get_number(gun.sprite_reload) * (1 - reload_cooldown / gun.reload_time))
+	}
+}
+
 draw_sprite_ext(spr_player_shadow, 0, x, y, image_xscale * facing, image_yscale, 0, c_white, 0.6)
-draw_sprite_ext(gun.sprite, image_index, x+3*facing, y-2, image_xscale * facing, image_yscale, 
-    (reload_cooldown > 0) ? facing * 30 : 0, c_white, 1)
+draw_sprite_ext(gun_draw_sprite, gun_image_index, gun_draw_x, gun_draw_y, image_xscale * facing, image_yscale, gun_draw_angle, c_white, 1)
 draw_sprite_ext(_base, image_index, x, y, image_xscale * facing, image_yscale, 0, c_white, 1)
 draw_sprite_ext(_hair, image_index, x, y, image_xscale * facing, image_yscale, 0, c_white, 1)
 draw_sprite_ext(_hand, image_index, x, y, image_xscale * facing, image_yscale, 0, c_white, 1)	

@@ -65,6 +65,7 @@ if (state == PLAYER_STATE.WALKING) {
 				if (interactable != noone and interactable.interact_cooldown <= 0) {
 					interactable.interact_counter += 1	
 				} else if (reload_cooldown <= 0 and ammo[gun_equipped] < gun.clip_size) {
+					gun_image_index = 0
 					reload_cooldown = gun.reload_time	
 					audio_play_sound(gun.sound_reload, 0, false)
 				}
@@ -76,6 +77,7 @@ if (state == PLAYER_STATE.WALKING) {
 				gun = guns_equipped[gun_equipped]
 				reload_cooldown = 0
 				shoot_cooldown = 10
+				gun_image_index = 0
 			}
 		}
 		if(!ctrl_reload_switch_interact) {
@@ -86,10 +88,12 @@ if (state == PLAYER_STATE.WALKING) {
 				ammo[gun_equipped] -= 1
 				gun.fire(x, y, facing)
 				shoot_cooldown = gun.shoot_cooldown
+				gun_image_index = 0
 			}
-			if (ammo[gun_equipped] <= 0 and reload_cooldown <= 0) {
+			if (ammo[gun_equipped] <= 0 and reload_cooldown <= 0 and shoot_cooldown <= 0) {
 				reload_cooldown = gun.reload_time	
 				audio_play_sound(gun.sound_reload, 0, false)
+				gun_image_index = 0
 			}	
 		}
 	}
