@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_semi_pistol_idle","path":"sprites/spr_semi_pistol_idle/spr_semi_pistol_idle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_semi_pistol_idle",
     "tags": [],
     "resourceType": "GMSequence",

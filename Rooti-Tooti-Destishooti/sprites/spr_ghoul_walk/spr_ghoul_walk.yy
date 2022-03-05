@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ghoul_walk","path":"sprites/spr_ghoul_walk/spr_ghoul_walk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_ghoul_walk",
     "tags": [],
     "resourceType": "GMSequence",

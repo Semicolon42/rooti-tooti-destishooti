@@ -20,7 +20,7 @@ if (state == PLAYER_STATE.WALKING) {
 	if (reload_cooldown > 0) {
 		reload_cooldown  -= 1
 		if (reload_cooldown == 0) {
-			ammo[gun_equipped] += gun.reload_ammount
+			ammo[gun_equipped] += gun.reload_amount
 			if (ammo[gun_equipped] < gun.clip_size) {
 				reload_cooldown = gun.reload_time	
 				audio_play_sound(gun.sound_reload, 0, false)

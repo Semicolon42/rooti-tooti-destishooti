@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_semi_pistol_fire","path":"sprites/spr_semi_pistol_fire/spr_semi_pistol_fire.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_semi_pistol_fire",
     "tags": [],
     "resourceType": "GMSequence",

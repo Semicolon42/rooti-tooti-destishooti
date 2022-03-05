@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_spawner_hut","path":"sprites/spr_spawner_hut/spr_spawner_hut.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_spawner_hut",
     "tags": [],
     "resourceType": "GMSequence",

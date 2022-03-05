@@ -60,7 +60,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_shadow","path":"sprites/spr_player_shadow/spr_player_shadow.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_shadow",
     "tags": [],
     "resourceType": "GMSequence",

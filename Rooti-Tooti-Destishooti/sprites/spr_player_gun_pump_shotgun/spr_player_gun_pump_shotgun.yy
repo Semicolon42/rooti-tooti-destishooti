@@ -60,7 +60,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_gun_pump_shotgun","path":"sprites/spr_player_gun_pump_shotgun/spr_player_gun_pump_shotgun.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_gun_pump_shotgun",
     "tags": [],
     "resourceType": "GMSequence",

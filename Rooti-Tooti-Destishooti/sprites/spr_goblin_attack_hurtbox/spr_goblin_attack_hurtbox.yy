@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_goblin_attack_hurtbox","path":"sprites/spr_goblin_attack_hurtbox/spr_goblin_attack_hurtbox.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_goblin_attack_hurtbox",
     "tags": [],
     "resourceType": "GMSequence",

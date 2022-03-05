@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ghoul_idle","path":"sprites/spr_ghoul_idle/spr_ghoul_idle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_ghoul_idle",
     "tags": [],
     "resourceType": "GMSequence",

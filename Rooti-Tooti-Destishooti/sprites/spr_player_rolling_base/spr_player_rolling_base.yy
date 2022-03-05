@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_rolling_base","path":"sprites/spr_player_rolling_base/spr_player_rolling_base.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_rolling_base",
     "tags": [],
     "resourceType": "GMSequence",
