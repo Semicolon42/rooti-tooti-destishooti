@@ -18,18 +18,18 @@ if (true) {
 		resize(320, 240, 640, 480)
 	}
 	if (keyboard_check_pressed(ord("W"))) {
-		resize(640, 480, 640, 480)
+		resize(320, 240, 640, 480)
 	}
 	if (keyboard_check_pressed(ord("E"))) {
-		resize(640, 480, 1280, 960)
+		resize(320, 240, 1280, 960)
 	}
 	if (keyboard_check_pressed(ord("R"))) {
-		resize(640, 360, 640, 360)
+		resize(360, 240, 360, 240)
 	}
 	if (keyboard_check_pressed(ord("T"))) {
-		resize(640, 360, 1280, 720)
+		resize(360, 240, 720, 480)
 	}
 	if (keyboard_check_pressed(ord("Y"))) {
-		resize(1280, 720, 1280, 720)
+		resize(360, 240, 1060, 720)
 	}
 }
