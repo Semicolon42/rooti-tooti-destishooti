@@ -9,12 +9,13 @@ menu_size = 2
 credits_items = [
 	"Programming: Brendan M",
 	"Zombie and Spider Assets: Sean M",
+	"Ground Tileset: Sunnyside World Asset Pack: DanielDiggle",
 	"Player and Goblin Assets: Sunnyside World Asset Pack: DanielDiggle",
 	"                          https://danieldiggle.itch.io/sunnyside",
 	"Music: Sean M",
 	"Sound Effects: https://www.gamedevmarket.net/asset/the-complete-audio-and-fx-bundle/",
 	"",
-	"Press <Any Key> to return to the main menu"
+	"Press <Any Key> to return to the main menu",
 ]
 
 credits_scroll = 0
