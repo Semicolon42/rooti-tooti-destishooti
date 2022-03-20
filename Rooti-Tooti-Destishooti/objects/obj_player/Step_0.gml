@@ -8,8 +8,6 @@ var ctrl_roll_pressed = keyboard_check_pressed(ord("X"))
 var ctrl_shoot_pressed = keyboard_check_pressed(ord("Z"))
 var ctrl_shoot = keyboard_check(ord("Z"))
 
-
-
 if (state == PLAYER_STATE.WALKING) {
 	if (switch_weapon_cooldown > 0) {
 		switch_weapon_cooldown -= 1

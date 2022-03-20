@@ -24,13 +24,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"7631aaf0-4a2e-40c3-b867-12be4b9cbdf4","path":"sprites/spr_camera_controller/spr_camera_controller.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7631aaf0-4a2e-40c3-b867-12be4b9cbdf4","path":"sprites/spr_camera_controller/spr_camera_controller.yy",},"LayerId":{"name":"06a0697f-5c19-41d5-b7ad-9482b6fab75d","path":"sprites/spr_camera_controller/spr_camera_controller.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"7631aaf0-4a2e-40c3-b867-12be4b9cbdf4","path":"sprites/spr_camera_controller/spr_camera_controller.yy",},"LayerId":{"name":"56a238a4-049b-4dc2-a449-a243fd0c3ee6","path":"sprites/spr_camera_controller/spr_camera_controller.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_camera_controller","path":"sprites/spr_camera_controller/spr_camera_controller.yy",},"resourceVersion":"1.0","name":"7631aaf0-4a2e-40c3-b867-12be4b9cbdf4","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"7631aaf0-4a2e-40c3-b867-12be4b9cbdf4","path":"sprites/spr_ctrl_camera_controller/spr_ctrl_camera_controller.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"7631aaf0-4a2e-40c3-b867-12be4b9cbdf4","path":"sprites/spr_ctrl_camera_controller/spr_ctrl_camera_controller.yy",},"LayerId":{"name":"56a238a4-049b-4dc2-a449-a243fd0c3ee6","path":"sprites/spr_ctrl_camera_controller/spr_ctrl_camera_controller.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"7631aaf0-4a2e-40c3-b867-12be4b9cbdf4","path":"sprites/spr_ctrl_camera_controller/spr_ctrl_camera_controller.yy",},"LayerId":{"name":"06a0697f-5c19-41d5-b7ad-9482b6fab75d","path":"sprites/spr_ctrl_camera_controller/spr_ctrl_camera_controller.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_ctrl_camera_controller","path":"sprites/spr_ctrl_camera_controller/spr_ctrl_camera_controller.yy",},"resourceVersion":"1.0","name":"7631aaf0-4a2e-40c3-b867-12be4b9cbdf4","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_camera_controller","path":"sprites/spr_camera_controller/spr_camera_controller.yy",},
+    "spriteId": {"name":"spr_ctrl_camera_controller","path":"sprites/spr_ctrl_camera_controller/spr_ctrl_camera_controller.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -42,7 +42,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"8c8bb8f8-d3c4-4334-9b05-f9d7b7f9c92d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7631aaf0-4a2e-40c3-b867-12be4b9cbdf4","path":"sprites/spr_camera_controller/spr_camera_controller.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8c8bb8f8-d3c4-4334-9b05-f9d7b7f9c92d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7631aaf0-4a2e-40c3-b867-12be4b9cbdf4","path":"sprites/spr_ctrl_camera_controller/spr_ctrl_camera_controller.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -59,9 +59,9 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_camera_controller","path":"sprites/spr_camera_controller/spr_camera_controller.yy",},
+    "parent": {"name":"spr_ctrl_camera_controller","path":"sprites/spr_ctrl_camera_controller/spr_ctrl_camera_controller.yy",},
     "resourceVersion": "1.4",
-    "name": "spr_camera_controller",
+    "name": "spr_ctrl_camera_controller",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -75,7 +75,7 @@
     "path": "folders/OPTIONS/Controller Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_camera_controller",
+  "name": "spr_ctrl_camera_controller",
   "tags": [],
   "resourceType": "GMSprite",
 }
