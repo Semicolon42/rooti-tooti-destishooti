@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"fnt_text_box","path":"fonts/fnt_text_box/fnt_text_box.yy",},"order":3,},
     {"id":{"name":"spr_MAIN_MENU_CTRL","path":"sprites/spr_MAIN_MENU_CTRL/spr_MAIN_MENU_CTRL.yy",},"order":0,},
     {"id":{"name":"obj_pickup_gun","path":"objects/obj_pickup_gun/obj_pickup_gun.yy",},"order":1,},
     {"id":{"name":"ds_grid_delete_","path":"scripts/ds_grid_delete_/ds_grid_delete_.yy",},"order":0,},
@@ -89,6 +90,7 @@
     {"id":{"name":"shd_hit_shader","path":"shaders/shd_hit_shader/shd_hit_shader.yy",},"order":1,},
     {"id":{"name":"rm_demo_interp","path":"rooms/rm_demo_interp/rm_demo_interp.yy",},"order":2,},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":0,},
+    {"id":{"name":"spr_textbox_background","path":"sprites/spr_textbox_background/spr_textbox_background.yy",},"order":2,},
     {"id":{"name":"spr_player_running_hand_empty","path":"sprites/spr_player_running_hand_empty/spr_player_running_hand_empty.yy",},"order":2,},
     {"id":{"name":"string_explode","path":"scripts/string_explode/string_explode.yy",},"order":0,},
     {"id":{"name":"obj_game_menu_controller","path":"objects/obj_game_menu_controller/obj_game_menu_controller.yy",},"order":10,},
@@ -117,6 +119,7 @@
     {"id":{"name":"spr_player_jump_base","path":"sprites/spr_player_jump_base/spr_player_jump_base.yy",},"order":0,},
     {"id":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},"order":0,},
     {"id":{"name":"ts_farm_sprite","path":"sprites/ts_farm_sprite/ts_farm_sprite.yy",},"order":0,},
+    {"id":{"name":"scr_draw_textbox","path":"scripts/scr_draw_textbox/scr_draw_textbox.yy",},"order":1,},
     {"id":{"name":"spr_goblin_idle","path":"sprites/spr_goblin_idle/spr_goblin_idle.yy",},"order":0,},
     {"id":{"name":"spr_ghoul_idle","path":"sprites/spr_ghoul_idle/spr_ghoul_idle.yy",},"order":0,},
     {"id":{"name":"string_lower_","path":"scripts/string_lower_/string_lower_.yy",},"order":2,},
@@ -300,6 +303,8 @@
     {"folderPath":"folders/GAME/camera/sprites.yy","order":1,"resourceVersion":"1.0","name":"sprites","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/MAPS.yy","order":12,"resourceVersion":"1.0","name":"MAPS","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/GAME/Proximity.yy","order":13,"resourceVersion":"1.0","name":"Proximity","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/UI/Textboxes.yy","order":0,"resourceVersion":"1.0","name":"Textboxes","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/UI.yy","order":13,"resourceVersion":"1.0","name":"UI","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
