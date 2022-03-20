@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_MAIN_MENU_CTRL",
-    "path": "sprites/spr_MAIN_MENU_CTRL/spr_MAIN_MENU_CTRL.yy",
+    "name": "spr_ctrl_main_menu",
+    "path": "sprites/spr_ctrl_main_menu/spr_ctrl_main_menu.yy",
   },
   "solid": false,
   "visible": true,

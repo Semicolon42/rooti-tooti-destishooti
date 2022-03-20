@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_camera_controller",
-    "path": "sprites/spr_camera_controller/spr_camera_controller.yy",
+    "name": "spr_ctrl_camera_controller",
+    "path": "sprites/spr_ctrl_camera_controller/spr_ctrl_camera_controller.yy",
   },
   "solid": false,
   "visible": false,
