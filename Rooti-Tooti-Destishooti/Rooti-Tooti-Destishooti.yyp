@@ -156,7 +156,7 @@
     {"id":{"name":"ds_struct_copy","path":"scripts/ds_struct_copy/ds_struct_copy.yy",},"order":0,},
     {"id":{"name":"spr_ctrl_keyboard_dark_down","path":"sprites/spr_ctrl_keyboard_dark_down/spr_ctrl_keyboard_dark_down.yy",},"order":4,},
     {"id":{"name":"crv_squiggle","path":"animcurves/crv_squiggle/crv_squiggle.yy",},"order":1,},
-    {"id":{"name":"obj_music_controller","path":"objects/obj_music_controller/obj_music_controller.yy",},"order":2,},
+    {"id":{"name":"obj_controller_audio","path":"objects/obj_controller_audio/obj_controller_audio.yy",},"order":2,},
     {"id":{"name":"color_get_hex","path":"scripts/color_get_hex/color_get_hex.yy",},"order":0,},
     {"id":{"name":"spr_ctrl_keyboard_dark_space","path":"sprites/spr_ctrl_keyboard_dark_space/spr_ctrl_keyboard_dark_space.yy",},"order":1,},
     {"id":{"name":"gun_info","path":"scripts/gun_info/gun_info.yy",},"order":1,},
@@ -309,6 +309,8 @@
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
+    {"targets":-1,"resourceVersion":"1.3","name":"ag_music","resourceType":"GMAudioGroup",},
+    {"targets":-1,"resourceVersion":"1.3","name":"ag_SFX","resourceType":"GMAudioGroup",},
   ],
   "TextureGroups": [
     {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,"resourceVersion":"1.3","name":"Default","resourceType":"GMTextureGroup",},
