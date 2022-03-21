@@ -8,8 +8,8 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "ag_SFX",
+    "path": "audiogroups/ag_SFX",
   },
   "soundFile": "snd_pistol_reload.wav",
   "duration": 1.0,

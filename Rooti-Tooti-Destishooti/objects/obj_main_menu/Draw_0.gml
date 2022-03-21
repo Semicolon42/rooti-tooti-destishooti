@@ -11,8 +11,8 @@ if (!show_credits) {
 } else {
 	var h = 10
 	for (i = 0; i < array_length(credits_items); i++) {	
-		var xx = x
-		var yy = y + i * h + credits_scroll
+		var xx = x + credits_scroll_x
+		var yy = y + i * h + credits_scroll_y
 		draw_text_transformed(xx, yy, credits_items[i], .5, .5, 0)	
 	}
 }
