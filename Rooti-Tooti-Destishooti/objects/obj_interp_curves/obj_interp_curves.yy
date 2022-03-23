@@ -30,7 +30,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Interp Demo",
-    "path": "folders/XGASOFT/GML+/Demo/Interp Demo.yy",
+    "path": "folders/_IMPORTED STUFF/XGASOFT/GML+/Demo/Interp Demo.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_interp_curves",

@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "GameInfo",
-    "path": "folders/GAME/GameInfo.yy",
+    "name": "gun_fire_scripts",
+    "path": "folders/GAME/GameInfo/gun_fire_scripts.yy",
   },
   "resourceVersion": "1.0",
   "name": "gun_info",
