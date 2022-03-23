@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Angle Functions Demo",
-    "path": "folders/XGASOFT/GML+/Demo/Angle Functions Demo.yy",
+    "path": "folders/_IMPORTED STUFF/XGASOFT/GML+/Demo/Angle Functions Demo.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_trig_bullet",

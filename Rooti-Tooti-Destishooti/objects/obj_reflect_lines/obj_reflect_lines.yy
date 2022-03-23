@@ -30,7 +30,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Reflection Demo",
-    "path": "folders/XGASOFT/GML+/Demo/Reflection Demo.yy",
+    "path": "folders/_IMPORTED STUFF/XGASOFT/GML+/Demo/Reflection Demo.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_reflect_lines",

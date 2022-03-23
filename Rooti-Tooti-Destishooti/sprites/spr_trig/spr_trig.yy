@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Sprites",
-    "path": "folders/XGASOFT/GML+/Sprites.yy",
+    "path": "folders/_IMPORTED STUFF/XGASOFT/GML+/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_trig",

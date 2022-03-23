@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Angles and Distance",
-    "path": "folders/XGASOFT/GML+/Scripts/Maths and Numbers/Angles and Distance.yy",
+    "path": "folders/_IMPORTED STUFF/XGASOFT/GML+/Scripts/Maths and Numbers/Angles and Distance.yy",
   },
   "resourceVersion": "1.0",
   "name": "angle_reflect",

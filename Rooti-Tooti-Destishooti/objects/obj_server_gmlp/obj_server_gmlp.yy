@@ -31,7 +31,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Objects",
-    "path": "folders/XGASOFT/GML+/Objects.yy",
+    "path": "folders/_IMPORTED STUFF/XGASOFT/GML+/Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_server_gmlp",
