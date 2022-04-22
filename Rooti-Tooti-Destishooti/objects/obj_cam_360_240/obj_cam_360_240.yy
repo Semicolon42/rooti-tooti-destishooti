@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "camera",
-    "path": "folders/GAME/camera.yy",
+    "name": "Camera",
+    "path": "folders/GAME/Camera.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_cam_360_240",

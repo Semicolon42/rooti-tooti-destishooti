@@ -9,6 +9,9 @@ var ctrl_shoot_pressed = keyboard_check_pressed(ord("Z"))
 var ctrl_shoot = keyboard_check(ord("Z"))
 
 if (state == PLAYER_STATE.WALKING) {
+	var move_x = 0
+	var move_y = 0
+	
 	if (switch_weapon_cooldown > 0) {
 		switch_weapon_cooldown -= 1
 	}
@@ -31,13 +34,13 @@ if (state == PLAYER_STATE.WALKING) {
 	if (roll_time > 0) roll_time -= 1
 	if (roll_time > roll_cooldown) {
 		animation_state = PLAYER_ANNIMATION_STATE.ROLLING
-		x += roll_speed_x
-		y += roll_speed_y
+		move_x += roll_speed_x
+		move_y += roll_speed_y
 	} else {
-		if (ctrl_up) y -= walk_speed_y
-		if (ctrl_down) y += walk_speed_y
-		if (ctrl_right) x += walk_speed_x
-		if (ctrl_left) x -= walk_speed_x
+		if (ctrl_up) move_y -= walk_speed_y
+		if (ctrl_down) move_y += walk_speed_y
+		if (ctrl_right) move_x += walk_speed_x
+		if (ctrl_left) move_x -= walk_speed_x
 		if (ctrl_right && !ctrl_shoot) facing = 1
 		if (ctrl_left && !ctrl_shoot) facing = -1
 		if (roll_time <= 0 && ctrl_roll_pressed) {
@@ -58,6 +61,7 @@ if (state == PLAYER_STATE.WALKING) {
 				if (ctrl_down) roll_speed_y = roll_speed_y_max 
 			}
 		}
+		
 		if (jump_time > 0) {
 			animation_state = PLAYER_ANNIMATION_STATE.JUMPING
 		} else if (ctrl_up or ctrl_down or ctrl_right or ctrl_left) {
@@ -104,6 +108,22 @@ if (state == PLAYER_STATE.WALKING) {
 				gun_image_index = 0
 			}	
 		}
+	}
+	// Handle movement
+	for(var ix=0; ix < abs(move_x); ix += 1) {
+		if (place_meeting(x+sign(move_x),y, obj_unwalkable)) {
+			break;
+		} else {
+			x += sign(move_x)
+		}
+	}
+	for(var iy=0; iy < abs(move_y); iy += 1) {
+		if (place_meeting(x,y+sign(move_y), obj_unwalkable)) {
+			break;
+		} else {
+			y += sign(move_y)
+		}
+		
 	}
 }
 depth = -y

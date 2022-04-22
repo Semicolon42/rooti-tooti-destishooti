@@ -17,5 +17,5 @@ if (interact_cooldown > 0) interact_cooldown -= 1
 if (interact_counter >= interact_counter_max) {
 	interact_counter = 0
 	interact_cooldown = interact_cooldown_max
-	script_execute(interact_script_execute, interact_script_execute_params)	
+	script_execute(interact_script_execute, obj_player, interact_script_execute_params)	
 }

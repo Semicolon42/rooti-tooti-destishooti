@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 719,
+  "bbox_right": 63,
   "bbox_top": 0,
-  "bbox_bottom": 479,
+  "bbox_bottom": 63,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 720,
-  "height": 480,
+  "width": 64,
+  "height": 64,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"a6345297-efc1-41ea-85fb-573431c9a16c","path":"sprites/spr_camera_720_480/spr_camera_720_480.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a6345297-efc1-41ea-85fb-573431c9a16c","path":"sprites/spr_camera_720_480/spr_camera_720_480.yy",},"LayerId":{"name":"11952c27-4c2b-4d1d-b317-dcf2461d2488","path":"sprites/spr_camera_720_480/spr_camera_720_480.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_camera_720_480","path":"sprites/spr_camera_720_480/spr_camera_720_480.yy",},"resourceVersion":"1.0","name":"a6345297-efc1-41ea-85fb-573431c9a16c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"8e6a232f-f831-47b0-8565-0877aaaebd29","path":"sprites/spr_hole/spr_hole.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"8e6a232f-f831-47b0-8565-0877aaaebd29","path":"sprites/spr_hole/spr_hole.yy",},"LayerId":{"name":"757b6eb5-7a89-42b5-b04f-cf27e02ca183","path":"sprites/spr_hole/spr_hole.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_hole","path":"sprites/spr_hole/spr_hole.yy",},"resourceVersion":"1.0","name":"8e6a232f-f831-47b0-8565-0877aaaebd29","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_camera_720_480","path":"sprites/spr_camera_720_480/spr_camera_720_480.yy",},
+    "spriteId": {"name":"spr_hole","path":"sprites/spr_hole/spr_hole.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"64fb67aa-e093-4389-ba17-3a4ee3c081b6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a6345297-efc1-41ea-85fb-573431c9a16c","path":"sprites/spr_camera_720_480/spr_camera_720_480.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a627a7f5-c3f9-4299-ac79-a1281994f321","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8e6a232f-f831-47b0-8565-0877aaaebd29","path":"sprites/spr_hole/spr_hole.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,22 +58,22 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_camera_720_480","path":"sprites/spr_camera_720_480/spr_camera_720_480.yy",},
+    "parent": {"name":"spr_hole","path":"sprites/spr_hole/spr_hole.yy",},
     "resourceVersion": "1.4",
-    "name": "spr_camera_720_480",
+    "name": "spr_hole",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"11952c27-4c2b-4d1d-b317-dcf2461d2488","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"757b6eb5-7a89-42b5-b04f-cf27e02ca183","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "sprites",
-    "path": "folders/GAME/Camera/sprites.yy",
+    "path": "folders/GAME/Objects/sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_camera_720_480",
+  "name": "spr_hole",
   "tags": [],
   "resourceType": "GMSprite",
 }

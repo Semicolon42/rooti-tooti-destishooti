@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "sprites",
-    "path": "folders/GAME/camera/sprites.yy",
+    "path": "folders/GAME/Camera/sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_camera_1440_240",

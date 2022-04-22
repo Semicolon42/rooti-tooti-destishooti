@@ -1,10 +1,16 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_statue_king",
+    "path": "sprites/spr_statue_king/spr_statue_king.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_solid",
+    "path": "objects/obj_solid/obj_solid.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -17,7 +23,9 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -25,7 +33,7 @@
     "path": "folders/GAME/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_wall",
+  "name": "obj_solid_statue_king",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -4,7 +4,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_unwalkable",
+    "path": "objects/obj_unwalkable/obj_unwalkable.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -17,17 +20,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Camera",
-    "path": "folders/GAME/Camera.yy",
+    "name": "GAME",
+    "path": "folders/GAME.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_camera_area_base",
+  "name": "obj_solid",
   "tags": [],
   "resourceType": "GMObject",
 }

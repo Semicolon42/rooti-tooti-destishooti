@@ -48,3 +48,15 @@ switch_weapon_cooldown = 10
 
 
 gun_image_index = 0
+
+function set_current_gun(gun_index) {
+	set_gun(gun_equipped, gun_index)
+}
+
+function set_gun(player_gun_index, gun_index) {
+	var _gun = get_gun_info(gun_index)
+	gun = _gun
+	guns_equipped[player_gun_index] = _gun
+	ammo[player_gun_index] = gun.clip_size
+	shoot_cooldown = 0
+}

@@ -1,10 +1,16 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_hole",
+    "path": "sprites/spr_hole/spr_hole.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_unwalkable",
+    "path": "objects/obj_unwalkable/obj_unwalkable.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -17,17 +23,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Camera",
-    "path": "folders/GAME/Camera.yy",
+    "name": "Objects",
+    "path": "folders/GAME/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_camera_area_base",
+  "name": "obj_hole_basic",
   "tags": [],
   "resourceType": "GMObject",
 }

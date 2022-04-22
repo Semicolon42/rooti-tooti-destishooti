@@ -1,10 +1,16 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_statue",
+    "path": "sprites/spr_statue/spr_statue.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_solid",
+    "path": "objects/obj_solid/obj_solid.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -18,16 +24,16 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Camera",
-    "path": "folders/GAME/Camera.yy",
+    "name": "Objects",
+    "path": "folders/GAME/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_camera_area_base",
+  "name": "obj_solid_statue_empty",
   "tags": [],
   "resourceType": "GMObject",
 }
